@@ -6,7 +6,7 @@ const nextConfig = {
         includePaths: [path.join(__dirname, 'styles')],
     },
     redirects: async () => {
-        return [];
+        return [{ source: '/', destination: '/products', permanent: true }];
     },
 };
 
