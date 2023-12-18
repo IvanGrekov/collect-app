@@ -9,14 +9,15 @@
     --dark: 23, 107, 135;
     --middle: 170, 207, 208;
 
-    --gray: #aaaaaa;
+    --gray: rgb(120, 120, 120);
     --gray-light: #e3e1e1;
     --red: #f45050;
     --green: #47a992;
     --blue: #3a98b9;
 
     --middle-color: rgba(var(--middle));
-    --middle-opacity: rgba(var(--middle), 0.5);
+    --middle-light-color: rgba(var(--middle-light));
+    --middle-opacity-color: rgba(var(--middle), 0.5);
     --hover: rgb(var(--middle));
     --disabled: var(--foreground-invisible);
     --disabled-text: var(--disabled);
@@ -82,11 +83,13 @@
 
 html {
     @extend .light-theme-variables-extend;
+
     color-scheme: light;
 }
 
 html.dark {
     @extend .dark-theme-variables-extend;
+
     color-scheme: dark;
 }
 

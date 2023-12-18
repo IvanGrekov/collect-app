@@ -1,0 +1,14 @@
+@import 'styles/variables.scss';
+@import 'styles/extends.scss';
+
+.main {
+    height: 100vh;
+}
+
+.header-spacing {
+    @extend .header-spacing-extend;
+}
+
+.sidebar-layout {
+    @extend .sidebar-layout-extend;
+}
